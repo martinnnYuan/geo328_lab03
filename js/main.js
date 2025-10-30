@@ -71,7 +71,7 @@ async function geojsonFetch() {
 
 geojsonFetch();
 
-let btn = document.getElementsByTagName("button")[0];
+let btn = document.getElementById("sort-btn");
 
 btn.addEventListener('click', sortTable);
 

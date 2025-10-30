@@ -9,8 +9,13 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
     <style>
         body {
+            height: 100%;
             margin: 0;
             padding: 0;
+        }
+        #map {
+            position: fixed;    
+            inset: 0;            
         }
 
         #container {
@@ -20,13 +25,26 @@
             align-items: stretch;
         }
         #side-panel {
-            flex-basis: 500px;
-            overflow-y: scroll;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 380px;      
+            max-width: 90vw;
+            height: 100vh;
+            overflow: auto;
+            padding: 16px 16px 24px;
+            box-shadow: -8px 0 20px rgba(0,0,0,0.15);
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: saturate(180%) blur(6px);
+            z-index: 10;         
         }
 
-        #map {
-            flex-grow: 1;
+        .table-wrap {
+            margin-top: 12px;
+            max-height: calc(100vh - 120px); 
+            overflow: auto;
         }
+
         button {
             margin-bottom: 10px;
         }
@@ -37,39 +55,48 @@
             border: 1px solid #ddd;
         }
 
-        th,
-        td {
+        th, td {
             text-align: left;
-            padding: 16px;
+            padding: 12px 14px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:nth-child(even) { background-color: #f8f8f8; }
+        @media (max-width: 1024px) {
+            #side-panel {
+                display: none;    
+            }
+            #map {
+                inset: 0;           
+            }
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
     </style>
 </head> 
  
 
 <body>
-   <main id="container">
-       <div id="side-panel">
 
-           <h2>Earthquake List</h2>
-           <button>Sort by Magnitude</button>
+  <div id="map"></div>
 
-           <table>
-               <tr>
-                   <th>id</th>
-                   <th>magnitude</th>
-                   <th>timestamp</th>
-               </tr>
-           </table>
 
-       </div>
-       <div id="map"></div>
-   </main>
-   <script src="js/main.js"></script>
-</body>   
+  <aside id="side-panel">
+    <h2>Earthquake List</h2>
+    <button id="sort-btn">Sort by Magnitude</button>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>id</th>
+          <th>magnitude</th>
+          <th>timestamp</th>
+        </tr>
+      </table>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+ 
 <html>
 
 
