@@ -1,0 +1,144 @@
+{
+  "type": "FeatureCollection",
+  "name": "japan_tsunami_2017_episode",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "obs-001",
+      "properties": {
+        "episode_id": "JP-TSU-2017-EX01",
+        "episode_name": "Offshore Pacific Japan – 2017",
+        "tsunami_level": "Advisory",
+        "height_m": 0.3,
+        "status": "Observed",
+        "place": "Kushiro",
+        "prefecture": "Hokkaido",
+        "station_code": "JMA-01401",
+        "timestamp": "2017-09-26T10:14:00+09:00",
+        "source": "JMA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.381,
+          42.984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "obs-002",
+      "properties": {
+        "episode_id": "JP-TSU-2017-EX01",
+        "episode_name": "Offshore Pacific Japan – 2017",
+        "tsunami_level": "Advisory",
+        "height_m": 0.4,
+        "status": "Observed",
+        "place": "Miyako",
+        "prefecture": "Iwate",
+        "station_code": "JMA-00312",
+        "timestamp": "2017-09-26T10:28:00+09:00",
+        "source": "JMA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.961,
+          39.64
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "obs-003",
+      "properties": {
+        "episode_id": "JP-TSU-2017-EX01",
+        "episode_name": "Offshore Pacific Japan – 2017",
+        "tsunami_level": "Advisory",
+        "height_m": 0.2,
+        "status": "Observed",
+        "place": "Hachinohe",
+        "prefecture": "Aomori",
+        "station_code": "JMA-00207",
+        "timestamp": "2017-09-26T10:33:00+09:00",
+        "source": "JMA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.505,
+          40.514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "obs-004",
+      "properties": {
+        "episode_id": "JP-TSU-2017-EX01",
+        "episode_name": "Offshore Pacific Japan – 2017",
+        "tsunami_level": "Advisory",
+        "height_m": 0.1,
+        "status": "Observed",
+        "place": "Oarai",
+        "prefecture": "Ibaraki",
+        "station_code": "JMA-00809",
+        "timestamp": "2017-09-26T10:47:00+09:00",
+        "source": "JMA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.583,
+          36.311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "obs-005",
+      "properties": {
+        "episode_id": "JP-TSU-2017-EX01",
+        "episode_name": "Offshore Pacific Japan – 2017",
+        "tsunami_level": "Information",
+        "height_m": 0.1,
+        "status": "Observed",
+        "place": "Urado",
+        "prefecture": "Kochi",
+        "station_code": "JMA-03904",
+        "timestamp": "2017-09-26T11:02:00+09:00",
+        "source": "JMA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.563,
+          33.503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "obs-006",
+      "properties": {
+        "episode_id": "JP-TSU-2017-EX01",
+        "episode_name": "Offshore Pacific Japan – 2017",
+        "tsunami_level": "Information",
+        "height_m": 0.05,
+        "status": "Observed",
+        "place": "Naha",
+        "prefecture": "Okinawa",
+        "station_code": "JMA-04701",
+        "timestamp": "2017-09-26T11:18:00+09:00",
+        "source": "JMA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.679,
+          26.212
+        ]
+      }
+    }
+  ]
+}

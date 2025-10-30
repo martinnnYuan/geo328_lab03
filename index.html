@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Earthquake List</title>
+    <title>Geological Event in Japan</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
@@ -80,19 +80,32 @@
 
 
   <aside id="side-panel">
-    <h2>Earthquake List</h2>
+    <h2>Geological Event in Japan</h2>
+
+    <label for="dataset-select" style="display:block; font-size:14px; margin-bottom:6px;">
+    Dataset
+  </label>
+
+  <select id="dataset-select">
+    <option value="earthquakes" selected>Earthquakes</option>
+    <option value="tsunami">Tsunami (2017 Episodes)</option>
+  </select>
+
     <button id="sort-btn">Sort by Magnitude</button>
 
-    <div class="table-wrap">
-      <table>
+   <div class="table-wrap">
+    <table id="data-table">
+      <thead>
         <tr>
           <th>id</th>
           <th>magnitude</th>
           <th>timestamp</th>
         </tr>
-      </table>
-    </div>
-  </aside>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</aside>
 
   <script src="js/main.js"></script>
 </body>
